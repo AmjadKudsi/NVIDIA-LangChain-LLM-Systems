@@ -105,8 +105,7 @@ Here, NIM backed models act as the reasoning component, while LangChain manages 
 
 ## Author and Credits
 
-**Author**  
-Amjad Kudsi
+**Author:** Amjad Kudsi
 
 This repository was created and is maintained by Amjad Kudsi.
 
