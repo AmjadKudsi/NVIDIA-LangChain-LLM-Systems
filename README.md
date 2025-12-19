@@ -99,15 +99,6 @@ Here, NIM backed models act as the reasoning component, while LangChain manages 
 
 ---
 
-## Intended Audience
-
-- Engineers exploring NVIDIA NIMs for LLM inference
-- Developers building LangChain-based applications
-- Practitioners moving from prompt experiments to production-style systems
-- Anyone interested in agentic LLM architectures
-
----
-
 ## References
 
 - NVIDIA NIM Documentation  
