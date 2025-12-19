@@ -1,10 +1,123 @@
-# NVIDIA NIM LangChain Prompting and Agents
-This repository is a structured, end to end walkthrough of building large language model applications using NVIDIA NIMs as the inference backbone and LangChain as the orchestration layer. It progresses from basic prompt submission to fully agentic systems, demonstrating how NIM-hosted models can be accessed programmatically and composed into reliable, reusable workflows suitable for production-grade experimentation and application development.
+# NVIDIA-NIM-LangChain-Agents
 
-The early sections establish fundamentals of prompt engineering with NIM served chat models, covering direct prompt response cycles, streaming, and batch execution. LangChain is introduced as the primary abstraction layer, enabling standardized interaction with NIM endpoints while reducing boilerplate and improving composability. This grounds the reader in how NIMs fit into a modern LLM stack as high performance, containerized model services optimized for low latency inference.
+A practical, end-to-end repository for building large language model applications using **NVIDIA NIMs** as the inference layer and **LangChain** as the orchestration framework.
 
-The core of the repository centers on LangChain Expression Language and runnables, showing how discrete units of work can be chained, parallelized, and reused. These chains illustrate how NIM-powered models can be embedded into larger data flows, enabling scalable prompt pipelines rather than single-shot interactions. Message based prompting expands this capability by leveraging system, human, and AI roles to implement few shot prompting, controlled personas, and chain of thought style reasoning, all while remaining compatible with NIM deployed chat models.
+---
 
-Later sections focus on structured output and tool integration. Pydantic is used to enforce schema-validated model responses, enabling reliable data extraction and tagging from unstructured text. Tool use and agents demonstrate how NIM-backed LLMs can reason about when to invoke external functions and incorporate their outputs into final responses. This highlights NIM's role as the reasoning engine within agentic systems, while LangChain manages control flow and integration logic.
+## Overview
 
-Overall, the repository presents a complete, practical blueprint for building prompt driven, structured, and agentic LLM applications using NVIDIA NIMs and LangChain. It emphasizes modular design, iterative prompt refinement, and production-oriented patterns that extend beyond simple text generation into full LLM-powered systems.
+This repository provides a structured walkthrough of developing LLM-powered applications, starting from basic prompt submission and progressing to fully agentic systems. NVIDIA NIMs are used as the model serving backbone, while LangChain enables composition, control flow, and reuse of LLM driven logic.
+
+The focus is on building reliable, modular, and production-oriented workflows rather than one-off prompt experiments.
+
+---
+
+## Tech Stack
+
+- **NVIDIA NIMs**  
+  Containerized, high-performance inference services for large language models.
+
+- **LangChain**  
+  Application framework for chaining, routing, and managing LLM interactions.
+
+- **Pydantic**  
+  Schema validation and structured output enforcement.
+
+- **Python**  
+  Primary implementation language.
+
+---
+
+## Repository Structure and Learning Path
+
+### 1. Prompting Fundamentals
+
+- Sending prompts to NIM served chat models
+- Receiving standard responses
+- Streaming outputs
+- Batch processing
+- Iterative prompt refinement
+
+This section establishes how NIMs fit into an LLM application stack as low latency, programmatically accessible inference services.
+
+---
+
+### 2. LangChain Expression Language and Runnables
+
+- Introduction to LCEL
+- Creating reusable runnables
+- Composing chains
+- Parallel execution
+- Modular prompt pipelines
+
+These examples show how NIM powered models can be embedded into scalable workflows rather than single shot interactions.
+
+---
+
+### 3. Message-Based Prompting
+
+- System, human, and AI message roles
+- Few-shot prompting
+- Persona control using system messages
+- Chain of thought style prompting
+- Conversation history management
+
+This section demonstrates how structured message handling improves task reliability and reasoning depth while remaining compatible with NIM deployed chat models.
+
+---
+
+### 4. Structured Output and Data Extraction
+
+- Defining output schemas with Pydantic
+- Enforcing structured LLM responses
+- Extracting and tagging information from free-form text
+- Working with long documents
+
+This enables LLM outputs to be used safely in downstream systems.
+
+---
+
+### 5. Tool Use and Agents
+
+- Defining external tools
+- Integrating tools into LangChain chains
+- Building simple agents
+- Reasoning about when tool invocation is appropriate
+- Merging tool outputs into final responses
+
+Here, NIM backed models act as the reasoning component, while LangChain manages execution and integration logic.
+
+---
+
+## What This Repository Demonstrates
+
+- How to use NVIDIA NIMs as a drop-in inference layer for LLM applications
+- How LangChain enables composable, reusable LLM workflows
+- How to move from prompts to structured, agentic systems
+- How to enforce output reliability using schemas
+- How to extend LLM capabilities with tools and agents
+
+---
+
+## Intended Audience
+
+- Engineers exploring NVIDIA NIMs for LLM inference
+- Developers building LangChain-based applications
+- Practitioners moving from prompt experiments to production-style systems
+- Anyone interested in agentic LLM architectures
+
+---
+
+## References
+
+- NVIDIA NIM Documentation  
+  https://docs.nvidia.com/nim
+
+- LangChain Documentation  
+  https://python.langchain.com/docs/
+
+- LangChain Agents  
+  https://python.langchain.com/docs/concepts/agents/
+
+- Pydantic Documentation  
+  https://docs.pydantic.dev/
