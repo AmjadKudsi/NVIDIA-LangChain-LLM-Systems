@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="nvidia.png" alt="NVIDIA logo" width="220"/>
+</p>
+
 # NVIDIA-NIM-LangChain-Agents
 
 A practical, end-to-end repository for building large language model applications using **NVIDIA NIMs** as the inference layer and **LangChain** as the orchestration framework.
@@ -99,16 +103,20 @@ Here, NIM backed models act as the reasoning component, while LangChain manages 
 
 ---
 
-## References
+## Author and Credits
 
-- NVIDIA NIM Documentation  
+**Author**  
+Amjad Kudsi
+
+This repository was created and is maintained by Amjad Kudsi.
+
+It builds on and integrates the following open source and publicly documented technologies:
+
+- NVIDIA NIMs  
   https://docs.nvidia.com/nim
 
-- LangChain Documentation  
-  https://python.langchain.com/docs/
+- LangChain  
+  https://github.com/langchain-ai/langchain
 
-- LangChain Agents  
-  https://python.langchain.com/docs/concepts/agents/
-
-- Pydantic Documentation  
-  https://docs.pydantic.dev/
+- Pydantic  
+  https://github.com/pydantic/pydantic
