@@ -2,7 +2,7 @@
   <img src="nvidia.png" alt="NVIDIA logo" width="220"/>
 </p>
 
-# NVIDIA-NIM-LangChain-Agents
+# NIM-LangChain-Agents
 
 A practical, end-to-end repository for building large language model applications using **NVIDIA NIMs** as the inference layer and **LangChain** as the orchestration framework.
 
